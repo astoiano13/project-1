@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-  
-=======
->>>>>>> c2a64892bfeaf116fe27ffdd2ce38451a9971be4
 var settings = {
     "async": true,
     "crossDomain": true,
@@ -13,8 +9,6 @@ var settings = {
     }
 }
 
-<<<<<<< HEAD
-=======
 var queryURL = "https://api.spoonacular.com/recipes/random?number=10&apiKey=27be25798ebc4f7dabda934b43c15633"
 
 $("#startButton").on("click", function () {
@@ -33,4 +27,3 @@ $("#startButton").on("click", function () {
             console.log(response);
         })
 })
->>>>>>> c2a64892bfeaf116fe27ffdd2ce38451a9971be4
