@@ -9,23 +9,21 @@ var settings = {
     }
 }
 
-$.ajax(settings).done(function (response) {
-    console.log(response);
-});
+var queryURL = "https://api.spoonacular.com/recipes/random?number=10&apiKey=27be25798ebc4f7dabda934b43c15633"
 
+$("#startButton").on("click", function () {
 
-var APIKey = "27be25798ebc4f7dabda934b43c15633";
-var queryURL = "https://api.spoonacular.com/recipes/random" + APIKey;
-
-
-$.ajax({
-    url: queryURL,
-    method: "GET"
-})
-
-    .then(function (response) {
-        // Log the queryURL
-        console.log(queryURL);
-        // Log the resulting object
+    $.ajax(settings).done(function (response) {
         console.log(response);
+
     });
+
+    $.ajax({
+        url: queryURL,
+        method: "GET"
+    })
+
+        .then(function (response) {
+            console.log(response);
+        })
+})
