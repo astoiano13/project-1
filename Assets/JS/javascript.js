@@ -8,7 +8,6 @@ var settings = {
         "x-rapidapi-key": "5ae58be4c0mshda02cb58666e66dp1c926ejsnd57384ad94f9"
     }
 }
-
 var queryURL = "https://api.spoonacular.com/recipes/random?number=10&apiKey=27be25798ebc4f7dabda934b43c15633"
 
 $("#startButton").on("click", function () {
