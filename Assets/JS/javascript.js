@@ -8,21 +8,10 @@ var settings = {
         "x-rapidapi-key": "5ae58be4c0mshda02cb58666e66dp1c926ejsnd57384ad94f9"
     }
 }
-<<<<<<< HEAD
-var queryURL = "https://api.spoonacular.com/recipes/random?number=10&apiKey=27be25798ebc4f7dabda934b43c15633"
-
-$("#startButton").on("click", function () {
-
-    $.ajax(settings).done(function (response) {
-        console.log(response);
-
-    });
-=======
 
     // SPOONACULAR API BELOW //
     
 var queryURL = "https://api.spoonacular.com/recipes/random?number=5&tags=entree&apiKey=27be25798ebc4f7dabda934b43c15633"
->>>>>>> 1dc703a05992e6d40b1ab7dca66a36d6b91a9429
 
 function renderRecipes() {
     $.ajax({
