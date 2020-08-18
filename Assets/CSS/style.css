@@ -3,3 +3,14 @@
     height: 100%;
     background-image: url(https://agenergy.coop/wp-content/uploads/2016/02/green-hexagons-background-Large.png);
 }
+
+.heads {
+   margin-bottom: 100px;
+   display: none;
+}
+
+
+.tails {
+    margin-bottom: 100px;
+    display: none;
+ }
