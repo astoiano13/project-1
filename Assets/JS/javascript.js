@@ -21,9 +21,12 @@ $("#startButton").on("click", function () {
     $.ajax({
         url: queryURL,
         method: "GET"
-    })
+    });
 
-        .then(function (response) {
+    then(function (response) {
             console.log(response);
-        })
+        });
+
+    
+
 })
