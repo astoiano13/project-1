@@ -9,7 +9,7 @@ var settings = {
     }
 }
 
-var queryURL = "https://api.spoonacular.com/recipes/random?number=10&apiKey=27be25798ebc4f7dabda934b43c15633"
+var queryURL = "https://api.spoonacular.com/recipes/random?number=5&apiKey=27be25798ebc4f7dabda934b43c15633"
 
 $("#startButton").on("click", function () {
 
@@ -26,6 +26,4 @@ $("#startButton").on("click", function () {
         .then(function (response) {
             console.log(response);
         })
-
-
 })
