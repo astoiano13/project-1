@@ -9,7 +9,9 @@ var settings = {
     }
 }
     // SPOONACULAR API BELOW //
+    
 var queryURL = "https://api.spoonacular.com/recipes/random?number=5&tags=entree&apiKey=9d13b70d65dd4784af123551069fb0d9"
+
 function renderRecipes() {
     $.ajax({
         url: queryURL,
@@ -24,7 +26,9 @@ function renderRecipes() {
             for (var i = 0; i < results.length; i++) {  
                 var recipe = results[i];
                 console.log(recipe);
+
                 if (recipe) {
+
                     var recipeDiv = $("<div>")
                     var titleHeading = $("<h3>")
                     var linkToFood = $("<a target='_blank'>").text(recipe.title).attr("href", recipe.sourceUrl)
