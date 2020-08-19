@@ -28,7 +28,7 @@ function renderRecipes() {
                     var recipeDiv = $("<div>")
                     var titleHeading = $("<h3>")
                     var linkToFood = $("<a target='_blank'>").text(recipe.title).attr("href", recipe.sourceUrl)
-                    var imageOfFood = $("<img>").attr("src" , recipe.image)
+                    var imageOfFood = $("<img style='margin: auto;' class='column'>").attr("src" , recipe.image)
                     titleHeading.append(linkToFood)
                     recipeDiv.append(titleHeading)
                     recipeDiv.append(imageOfFood)
