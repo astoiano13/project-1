@@ -1,46 +1,97 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-  <link rel="stylesheet" href="./Assets/CSS/style.css">
-  <title>Project 1</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Indecisive Cook</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
 </head>
+  <link rel="stylesheet" href="./Assets/CSS/style.css">
+<style>
 
+.hero {
+  background: url(./Assets/Images/hero.jpg) center / cover;
+}
+
+.title {
+  font-family: cursive;
+  color: white;
+  padding-bottom: 30px;
+  text-shadow: 2px 1px black;
+}
+
+.subtitle {
+  font-family: cursive;
+  color: white;
+  text-shadow: 2px 1px black;
+}
+
+.button {
+  background-color: #eee;
+  border-radius: 10px;
+  opacity: 100%;
+}
+
+.card {
+  text-align: center;
+  font-size: 30px;
+  color: black;
+}
+
+.text-center {
+  opacity: 100%;
+  color: black;
+}
+
+#hpTitle {
+  opacity: 100%;
+  color: black;
+}
+
+</style>
+</head>
 <body>
-  <header class="jumbotron jumbotron-fluid">
-    <div class="container">
-      <h1 class="display-4" style="color: white;">Flip a Coin!</h1>
-      <p class="lead" style="color: white;">Can't decide if you want to make dinner or not tonight? Then flip a coin! And should you decide
-        it's the night to cook, you can access our database of over 365,000 recipes and 86,000 food products.</p>
-    </div>
-  </header>
+  
+  <section class="hero is-fullheight">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title">
+          Welcome to Indecisive Cook!
+        </h1>
 
-  <div class="container text-center">
-    <div class="startScreen">
-
-      <h1 class="text-center m-5" id="hpTitle">Flip the Coin using the button below!</h1>
-      <div id="coin"></div>
-      <img class="heads" src="./Assets/Images/Heads2.png" alt="heads_of_a_quarter">
-      <img class="tails" src="./Assets/Images/Tails2.png" alt="tails_of_a_quarter">
-      <p class="text-center" id="instructions"> Never flipped a coin before? You choose heads or tails before you flip,
-        then flip the coin. If the coin lands on the side you chose, you have to cook dinner tonight! Heads is the side
-        with the... well, the head. Tails is the side with the Bald Eagle. Now get flippin! Don't forget! <br>  Heads means you're eating out tonight,
-      tails means you're cooking.</p>
-
-      <div>
-        <button type="button" class="btn btn-secondary mt-4" id="startButton">Flip the Coin</button>
+        <h2 class="subtitle">
+          Can't decide if you want to make dinner or go out to eat tonight? Then flip a coin! Should fate decide
+          it's the night to cook, we will generate 5 random entrees from our database of over 365,000 recipes and 86,000 food products!
+          Don't like what we randomly gave you? Continuously press the button and generate more entrees to search and choose from!
+        </h2>
       </div>
     </div>
-
-    <div id="recipes"></div>
-
+    <div class="container is-fluid">
+      <div class="notification">
+        <h1 id="hpTitle">Flip the Coin using the button below!</h1>
+        <div id="coin"></div>
+        <img class="heads" src="./Assets/Images/Heads2.png" alt="heads_of_a_quarter">
+        <img class="tails" src="./Assets/Images/Tails2.png" alt="tails_of_a_quarter">
+        <p class="text-center" id="instructions"> Never flipped a coin before? You choose heads or tails before you flip,
+          then flip the coin. If the coin lands on the side you chose, you have to cook dinner tonight! Heads is the side
+          with the... well, the head. Tails is the side with the Bald Eagle. Now, get flippin! Don't forget! <br>  Heads means you're eating out tonight,
+        tails means you're cooking. </p>
+        <div>
+          <button class="button is-success" type="button" class="btn btn-secondary mt-6" id="startButton">Flip the Coin</button>
+        </div>
+        <button class="more is-hidden" onclick="renderRecipes()">More Recipes...</button>
+        <div id="recipes">
+          <!-- <div>
+            <h3><a target="_blank" href="https://www.foodista.com/recipe/8FXJDNZ3/easter-bunny-s-vegan-ambrosia-salad">Easter Bunny's Vegan Ambrosia Salad</a></h3  >
+            <img src="..." alt="...">
+  </div>   -->
+        </div>
+      </div>
+  </section>
+  <div class="card">&copy Indecisive Cook 2020 All Rights Reserved.</div>
+  
+  </header>
 
   </div>
   <!-- Optional JavaScript -->
@@ -55,5 +106,4 @@
     crossorigin="anonymous"></script>
   <script src="./Assets/JS/javascript.js"></script>
 </body>
-
 </html>
