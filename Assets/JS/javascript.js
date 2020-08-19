@@ -41,6 +41,7 @@ function renderRecipes() {
             }
         })
 }
+
 $("#startButton").on("click", function () {
     $(this).addClass("is-hidden")
     $.ajax(settings).done(function (response) {
